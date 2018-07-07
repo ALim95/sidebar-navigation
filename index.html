@@ -29,28 +29,36 @@
       </li>
       <li>
         <a class="navLink" id="to-body1" href="#body1" onclick="changeBgColor(1)">
-            <span class="tooltiptext">To body1</span>
+          <span class="tooltiptext">To body1</span>
         </a>
       </li>
       <li>
         <a class="navLink" id="to-body2" onclick="changeBgColor(2)" href="#body2">
-            <span class="tooltiptext">To body2</span>
+          <span class="tooltiptext">To body2</span>
         </a>
       </li>
       <li>
         <a class="navLink" id="to-end" onclick="changeBgColor(3)" href="#end">
-            <span class="tooltiptext">To end</span>
+          <span class="tooltiptext">To end</span>
         </a>
       </li>
     </ul>
   </nav>
 
-  <div class="slide">To top</div>
-  <div class="slide">Body 1</div>
-  <div class="slide">Body 2</div>
-  <div class="slide">End</div>
-
   <script src="./script/changeNavColor.js"></script>
+  <script>
+    window.onscroll = () => {
+      if (scrollY <= 800) {
+        changeBgColor(0);
+      } else if (scrollY <= 1800) {
+        changeBgColor(1);
+      } else if (scrollY <= 2800) {
+        changeBgColor(2);
+      } else if (scrollY <= 3800) {
+        changeBgColor(3);
+      }
+    };
+  </script>
 </body>
 
 </html>
