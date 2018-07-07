@@ -1,0 +1,108 @@
+body {
+  font: 400 15px/1.5 "Roboto", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  background-color: #f4f4f4;
+}
+
+/* Global */
+.container {
+  margin: auto;
+  overflow: hidden;
+}
+
+#top {
+  background-color: blue;
+  height: 1000px;
+}
+
+#body1 {
+  background-color: yellow;
+  height: 1000px;
+}
+
+#body2 {
+  background-color: red;
+  height: 1000px;
+}
+
+#end {
+  background-color: green;
+  height: 1000px;
+}
+
+nav#navbar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  margin-top: -80px;
+  background-color: #f4f4f4;
+  border-radius: 5px 0 0 5px;
+}
+
+ul#main-nav-link {
+  height: 160px;
+  width: 2em;
+  list-style: none;
+  padding-left: 10px;
+  margin-left: 0px;
+}
+
+ul#main-nav-link > li > a {
+  margin-left: 5px;
+  margin-top: 10px;
+  vertical-align: top;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  text-decoration: none;
+  border: solid grey;
+  border-radius: 50%;
+}
+ul#main-nav-link > li > a .tooltiptext {
+  color: black;
+  visibility: hidden;
+  background: #f4f4f4;
+  text-align: center;
+  position: absolute;
+}
+
+ul#main-nav-link > li > a#to-top .tooltiptext {
+  top: 20px;
+  right: 3em;
+  width: 5em;
+}
+
+ul#main-nav-link > li > a#to-body1 .tooltiptext {
+  top: 65px;
+  right: 3em;
+  width: 5em;
+}
+
+ul#main-nav-link > li > a#to-body2 .tooltiptext {
+  top: 110px;
+  right: 3em;
+  width: 5em;
+}
+
+ul#main-nav-link > li > a#to-end .tooltiptext {
+  top: 155px;
+  right: 3em;
+  width: 5em;
+}
+
+ul#main-nav-link > li > a:hover {
+  border: solid lightgreen;
+}
+
+ul#main-nav-link > li > a:hover .tooltiptext {
+  visibility: visible;
+}
+
+ul#main-nav-link > li > a#to-top {
+  background-color: grey;
+}
+
+ul > li:not(:last-child) {
+  margin-bottom: 1.5em;
+}

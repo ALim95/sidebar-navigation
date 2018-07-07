@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- Inspired by https://www.redditinc.com/ -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sidebar Navigation Project</title>
+  <link rel="stylesheet" href="./css/master.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+</head>
+
+<body>
+  <header id="top" class="container">
+  </header>
+  <section id="body1">
+  </section>
+  <section id="body2">
+  </section>
+  <footer id="end">
+  </footer>
+  <nav id="navbar">
+    <ul id="main-nav-link">
+      <li>
+        <a class="navLink" id="to-top" onclick="changeBgColor(0)" onmouseover="" href="#top">
+          <span class="tooltiptext">To top</span>
+        </a>
+      </li>
+      <li>
+        <a class="navLink" id="to-body1" href="#body1" onclick="changeBgColor(1)">
+            <span class="tooltiptext">To body1</span>
+        </a>
+      </li>
+      <li>
+        <a class="navLink" id="to-body2" onclick="changeBgColor(2)" href="#body2">
+            <span class="tooltiptext">To body2</span>
+        </a>
+      </li>
+      <li>
+        <a class="navLink" id="to-end" onclick="changeBgColor(3)" href="#end">
+            <span class="tooltiptext">To end</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="slide">To top</div>
+  <div class="slide">Body 1</div>
+  <div class="slide">Body 2</div>
+  <div class="slide">End</div>
+
+  <script src="./script/changeNavColor.js"></script>
+</body>
+
+</html>
